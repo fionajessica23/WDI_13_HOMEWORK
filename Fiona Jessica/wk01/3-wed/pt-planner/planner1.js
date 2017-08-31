@@ -1,6 +1,15 @@
+//have 3 arrays for each lines
+//hardcode richmond, assign value
 
-var glenWaverly = ['flagstaff', 'melbourne central', 'parliament', 'richmond', 'kooyong', 'tooronga']
+//origin for loop, cari satu2 di setiap array sampe ketemu
+//destination for loop, cari satu2 di setiap array sampe ketemu
+//
 
+var alamein = ['flinders street', 'richmond', 'east richmond', 'burnley', 'hawthorn', 'glenferrie'];
+
+var glenWaverly = ['flagstaff', 'melbourne central', 'parliament', 'richmond', 'kooyong', 'tooronga'];
+
+var sandringham = ['southern cross', 'richmond', 'south yarra', 'prahran', 'windsor'];
 
 var origin = prompt('input origin: ');
 var indexOrigin = glenWaverly.indexOf(origin);
@@ -28,17 +37,3 @@ if (indexDestination > indexOrigin) {
   console.log(journey.join(' --> '));
   console.log(journey.length - 1 + ' stops total');
 }
-
-
-
-//
-// var a = glenWaverly.indexOf(glenWaverly[1]);
-// var b = glenWaverly.indexOf(glenWaverly[3]);
-//
-// var stop = b - a;
-// console.log(stop + ' stops total');
-//
-// var journeyResult = '';
-// for (var index = a; index <= b; index++) {
-//   journeyResult = journeyResult + glenWaverly[index] + ' ---->'
-// }

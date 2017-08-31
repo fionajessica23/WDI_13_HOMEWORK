@@ -1,20 +1,21 @@
 // The Recipe Card
 
-//
-// console.log('recipe');
-//
-// var favRecipe = {
-//   title: 'sandwich',
-//   servings: 2,
-//   ingredients: ['bread', 'lettuce', 'cheese', 'ham']
-// };
-//
-// console.log(favRecipe.title);
-// console.log('serves: ' + favRecipe.servings);
-// console.log('Ingredients:');
-// console.log(favRecipe.ingredients.join('\n'));
-//
-// console.log('ingredients', favRecipe.ingredients);
+
+console.log('recipe');
+
+var favRecipe = {
+  title: 'sandwich',
+  servings: 2,
+  ingredients: ['bread', 'lettuce', 'cheese', 'ham']
+};
+
+console.log(favRecipe.title);
+console.log('serves: ' + favRecipe.servings);
+console.log('Ingredients:');
+console.log(favRecipe.ingredients.join('\n'));
+
+// the below command listing out the ingredients in array format
+console.log('ingredients', favRecipe.ingredients);
 
 
 
@@ -49,18 +50,16 @@
 
 
 // The Movie Database
-
-
-var movie = {
-  title: 'Taken 3',
-  duration: 115,
-  stars: ['liam neeson', 'famke janssen', 'maggie grace']
-};
-
-var movieInfo = function(movie) {
-  return movie.title + ' lasts for ' + movie.duration + ' minutes. Stars: ' + movie.stars
-}
-
-console.log(movieInfo(movie));
-
-  //console.log(mov.title + ' lasts for ' + mov.duration + ' minutes. Stars: ' + mov.stars);
+//
+//
+// var movie = {
+//   title: 'Taken 3',
+//   duration: 115,
+//   stars: ['liam neeson', 'famke janssen', 'maggie grace']
+// };
+//
+// var movieInfo = function(movie) {
+//   return movie.title + ' lasts for ' + movie.duration + ' minutes. Stars: ' + movie.stars
+// }
+//
+// console.log(movieInfo(movie));
