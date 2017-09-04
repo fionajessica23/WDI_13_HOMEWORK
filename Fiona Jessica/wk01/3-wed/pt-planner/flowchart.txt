@@ -1,0 +1,87 @@
+journey planning flowchart
+
+
+Start
+
+Given 3 lines: glenWaverly, alamein, sandringham
+  The Alamein line has the following stops: Flinders Street, Richmond, East Richmond, Burnley, Hawthorn, and Glenferrie.
+  The Glen Waverly line has the following stops: Flagstaff, Melbourne Central, Parliament, Richmond, Kooyong and Tooronga.
+  The Sandringham line has the following stops: Southern Cross, Richmond, South Yarra, Prahran, and Windsor.
+
+Get origin and destination station from user
+find given origin & destination station from which line
+find intersection from the 3 train lines
+
+create user route
+
+  if origin and destination station is located within same line
+    find how many trips required: 1 trip
+      trip no 1
+        starting point: origin station
+        end point: destination station
+
+        find all station between starting point and end point, and added into user route
+      then print user route including number of stops
+
+
+  if origin and destination station is located in different line,
+    find how many trips required: 2 trips
+      trip no 1
+        starting point: origin station
+        end point: intersection station
+
+        find all station between starting point and end point, and added into user route
+
+      trip no 2
+        starting point: end point of trip no 1
+        end point: destination station
+
+        find all station between starting point and end point, and added into user route
+
+      combined user route from trip no 1 and trip no 2
+      then print combined user route including number of stops
+
+
+  if origin equal to intersection point (TBD)
+
+
+
+End :( (not quite)
+
+======
+
+
+keyword: get, given, set, create, insert, go to, find, combined, if, else
+
+
+
+    second draft:
+    go to origin station lines
+    set origin station as a starting point of trip no 1 and use intersection station as an end point of trip no 1
+    go to destination station line
+    set end point of trip no 1 as a starting point of trip no 2
+    and use destination station as an end point of trip no 2
+
+
+
+    first draft:
+    then use intersection station as a temporary stop station,
+    then change line from the temp stop station to destination station's line,
+    then travel to destination station from the
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+create

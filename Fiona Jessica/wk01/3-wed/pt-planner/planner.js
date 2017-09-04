@@ -2,18 +2,15 @@
 var glenWaverly = ['flagstaff', 'melbourne central', 'parliament', 'richmond', 'kooyong', 'tooronga']
 
 
-var origin = prompt('input origin: ');
+var origin = 'kooyong'
 var indexOrigin = glenWaverly.indexOf(origin);
 var searchOrigin = glenWaverly[indexOrigin];
 console.log(searchOrigin);
 
 
-
-var destination = prompt('input destination: ');
+var destination = 'flagstaff'
 var indexDestination = glenWaverly.indexOf(destination);
 var searchDestination = glenWaverly[indexDestination];
-
-
 
 console.log('origin: ' + origin);
 console.log('destination: ' + destination);
