@@ -63,6 +63,10 @@ footer {
   text-align: left;
 }
 
+.post > img {
+  width: 100%;
+}
+
 a {
   color: red;
   font-weight: bold;
@@ -75,11 +79,18 @@ a {
 
 }
 
+h4 {
+
+}
+
 ul {
   list-style-type: none;
+  padding: 0;
+  margin-top: 0;
 
 }
 
 .side-image {
   padding: 10px 0 10px 0;
+  width: 100%;
 }
