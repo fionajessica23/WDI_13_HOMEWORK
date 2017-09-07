@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Online Bank</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+        <img src="http://www.ps3hax.net/avatars/avatar465003_4.gif">
+        </div>
+        <h1>ONLINE BANK</h1>
+      </header>
+      <main>
+        <div class="savings-atm">
+          <h4>SAVINGS</h4>
+          <h6>YOUR BALANCE IS...</h6>
+          <p>$<span id="savings-balance">80.00</span></p>
+          <input id="savings-amount" type="text" placeholder="Enter amount here">
+          <br>
+          <button id="savings-withdraw" type="button">Withdraw</button>
+          <button id="savings-deposit" type="button">Deposit</button>
+        </div>
+        <div class="checking-atm">
+          <h4>CHECKING</h4>
+          <h6>YOUR BALANCE IS...</h6>
+          <p>$<span id="checking-balance">00.00</span></p>
+          <input id="checking-amount" type="text" placeholder="Enter amount here">
+          <br>
+          <button id="checking-withdraw" type="button">Withdraw</button>
+          <button id="checking-deposit" type="button">Deposit</button>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="bank.js"></script>
+</html>
