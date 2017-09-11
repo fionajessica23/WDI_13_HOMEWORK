@@ -1,3 +1,15 @@
+// On the menu tonight: Steak, fruit salad, tofurkey, pork chops.
+// Directions to students:
+// prompts the user for their menu choice and assign it to a variable.
+//
+// If a vegan can eat it, return "This cuisine is vegan friendly."
+// Otherwise, return "Vegans beware!"
+// For the sake of this exercise. Tofurkey is definitely vegan friendly.
+// Hint: Two identical strings are considered to be equal to each other.
+
+
+
+
 var menuChoice = prompt('What do you want for dinner? Steak, fruit salad, tofurkey, or pork chops');
 console.log(menuChoice);
 

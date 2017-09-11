@@ -2,15 +2,13 @@
 //1.Assign the string "Jack" to a variable called captain
 // var captain = 'Jack';
 
+//
+// 2.Using the captain variable, use string concatenation to form the string "Oh Jack, my Jack!",
+// assigning it to a variable named phrase
 
-//2.Using the captain variable, use string concatenation to form the string "Oh Jack, my Jack!",
-//assigning it to a variable named phrase
-// var ohStr = 'Oh ';
-// var commaStr = ', ';
-// var myStr = 'my ';
-// var excStr = '!';
-// var phrase = ohStr.concat(captain, commaStr, myStr, captain, excStr);
+// var phrase = 'Oh ' + captain + ', my ' + captain + '!';
 // console.log(phrase);
+//
 
 
 //JS Conditionals
