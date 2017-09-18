@@ -19,7 +19,6 @@ var tailsCounter = 0;
 
 // adding event listener for the coin flip simulation
 
-var coinClicked = document.querySelector('#coin-clicked');
 var headsCount = document.querySelector('#heads-count');
 var tailsCount = document.querySelector('#tails-count');
 var showWinner = document.querySelector('#show-winner');
@@ -54,14 +53,14 @@ var coinFlip = function () {
 
   if (headsCounter === winningPoint) {
     showWinner.textContent = 'HEADS is WINNER!!';
-
+    document.querySelector('#flip-coin').disabled = true;
 
   } else if (tailsCounter === winningPoint) {
     showWinner.textContent = 'TAILS is WINNER!!';
+    document.querySelector('#flip-coin').disabled = true;
   }
 }
 
-coinClicked.addEventListener('click', coinFlip);
 
 var reset = function () {
   headsCount.textContent = 0;
@@ -69,13 +68,9 @@ var reset = function () {
   headsCounter = 0;
   tailsCounter = 0;
   showWinner.textContent = '';
+  document.querySelector('#flip-coin').disabled = false;
 
 }
 
 flipBtn.addEventListener('click', coinFlip);
 resetBtn.addEventListener('click', reset);
-
-
-// document.getElementById("btnPlaceOrder").disabled = true;
-//
-// document.getElementById("btnPlaceOrder").disabled = false;
