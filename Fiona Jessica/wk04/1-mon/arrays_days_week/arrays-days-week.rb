@@ -58,11 +58,11 @@ end
 
 puts new_week = [weekdays, weekend]
 
-
+binding.pry
 # 4.
-new_week.shift
-puts new_week
+# new_week.shift
+# puts new_week
 
 
 # 5.
-puts new_week.shift.sort
+# puts new_week.shift.sort
