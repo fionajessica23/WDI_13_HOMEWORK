@@ -1,15 +1,15 @@
 class Animal
 
-  def initialize(props)
-    @name = props[:name]
+  def initialize(name, age, gender, species)
+    @name = name
     @age = age
     @gender = gender
     @species = species
     @toys = []
   end
 
-  def add_toy(toy)
-    @toys.push toy
+  def add_toy_array(toy)
+    @toys += toy
   end
 
   def name

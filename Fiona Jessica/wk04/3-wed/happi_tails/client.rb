@@ -7,8 +7,25 @@ class Client
     @pets = []
   end
 
-  def pets_list(pet)
+  def add_pet_array(pet) # pet as array
+    @pets += pet
+  end
+
+  def adopt(pet) # pet as pet object
     @pets.push pet
   end
+
+  def name
+    @name
+  end
+
+  def pets
+    @pets
+  end
+
+  def print
+    puts "Name: #{@name}, number of children: #{@num_child}, age: #{@age}, pets: #{@pets}."
+  end
+
 
 end
