@@ -38,6 +38,10 @@ users["Erik"][:favorite_numbers]
 
 # How would you return the smallest of Erik's favorite numbers?
 users["Erik"][:favorite_numbers].min
+# or
+# users["Erik"][:favorite_numbers].sort.first
+# or
+# users["Erik"][:favorite_numbers].sort[0]
 
 
 # How would you return an array of Anil's favorite numbers that are also even?
@@ -45,8 +49,15 @@ users["Anil"][:favorite_numbers].select { |num| num.even? }
 
 
 # How would you return an array of the favorite numbers common to all users?
-
-
+fav_nums = users['Erik'][:favorite_numbers]
+users.each_value do |user|
+  fav_nums = fav_nums & user[:favorite_numbers]
+end
 
 
 # How would you return an array containing all users' favorite numbers, sorted, and excluding duplicates?
+common_number = []
+users.each_value do |name|
+  common_number.push(name[:favorite_numbers])
+end
+puts common_number.flatten.sort.uniq
