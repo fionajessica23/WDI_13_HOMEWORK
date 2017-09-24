@@ -49,10 +49,7 @@ users["Anil"][:favorite_numbers].select { |num| num.even? }
 
 
 # How would you return an array of the favorite numbers common to all users?
-fav_nums = users['Erik'][:favorite_numbers]
-users.each_value do |user|
-  fav_nums = fav_nums & user[:favorite_numbers]
-end
+users['Erik'][:favorite_numbers] & users['Anil'][:favorite_numbers] & users['Jonathan'][:favorite_numbers]
 
 
 # How would you return an array containing all users' favorite numbers, sorted, and excluding duplicates?

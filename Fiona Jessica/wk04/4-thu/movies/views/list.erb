@@ -1,0 +1,22 @@
+<% @movie_list_arr.each do |val| %>
+    <div class="left">
+      <img class="poster" src="<%= val["Poster"] %>" alt="">
+    </div>
+    <div class="right">
+      <div>
+        Title: <%= val["Title"] %>
+      </div>
+      <div>
+        Year: <%= val["Year"] %>
+      </div>
+      <div>
+        Rated: <%= val["imdbID"] %>
+      </div>
+      <div>
+        Released: <%= val["Type"] %>
+      </div>
+      <div>
+        <a href="detail?t=<%= val["Title"] %>">More info</a>
+      </div>
+    </div>
+<% end %>

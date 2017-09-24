@@ -7,13 +7,11 @@ class Client
     @pets = []
   end
 
-  def add_pet_array(pet) # pet as array
-    @pets += pet
-  end
-
-  def adopt(pet) # pet as pet object
-    @pets.push pet
-  end
+  # not being used,
+  # assume client can only have pets through adoption
+  # def add_pet_array(pet)
+  #   @pets += pet
+  # end
 
   def name
     @name
@@ -24,7 +22,11 @@ class Client
   end
 
   def print
-    puts "Name: #{@name}, number of children: #{@num_child}, age: #{@age}, pets: #{@pets}."
+    pet_list = []
+    @pets.each do |pet|
+      pet_list.push(pet.name)
+    end
+    puts "Name: #{@name}, number of children: #{@num_child}, age: #{@age}, pets: #{pet_list}."
   end
 
 
