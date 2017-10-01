@@ -1,0 +1,13 @@
+.dessert {
+  padding: 10px 0;
+}
+
+.dessert img {
+  display: block;
+  padding: 10px 0;
+}
+
+.dessert a {
+  display: block;
+  font-size: 17px;
+}

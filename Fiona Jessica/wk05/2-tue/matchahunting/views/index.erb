@@ -1,1 +1,11 @@
-<h1>hello world</h1>
+<h1>Latest 3 desserts</h1>
+
+<% @latest_3_desserts.each do |dessert| %>
+  <div class="dessert">
+    <h2>
+      <%= dessert.name %>
+    </h2>
+
+    <img src="<%= dessert.image_url %>" alt="">
+  </div>
+<% end %>

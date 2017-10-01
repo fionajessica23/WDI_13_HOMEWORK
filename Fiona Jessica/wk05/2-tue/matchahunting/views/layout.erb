@@ -7,6 +7,26 @@
 </head>
 <body>
 
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/desserts">All Desserts</a></li>
+        <li>
+        <% if logged_in? %>
+          <a href="/logout">Logout</a>
+        <% else %>
+          <a href="/login">Login</a>
+        <% end %>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <% if logged_in? %>
+    logged in as <%= current_user.email %>
+  <%end%>
+
   <%= yield %>
 
 </body>

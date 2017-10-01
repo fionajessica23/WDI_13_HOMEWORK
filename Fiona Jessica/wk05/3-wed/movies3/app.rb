@@ -29,6 +29,7 @@ get '/list' do
   end
 end
 
+
 get '/detail' do
   @title = params[:t]
 
@@ -48,9 +49,10 @@ get '/detail' do
     movie_obj.actors = @movie["Actors"]
     movie_obj.plot = @movie["Plot"]
     movie_obj.save
+    @movie = movie_obj
+  else
+    @movie = Movie.find_by(title: "#{@title}")
   end
-
-  @movie = Movie.find_by(title: "#{@title}")
   # binding.pry
   erb :detail
 end

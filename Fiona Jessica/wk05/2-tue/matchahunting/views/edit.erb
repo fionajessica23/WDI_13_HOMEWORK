@@ -1,0 +1,7 @@
+<form action="/desserts/<%= @dessert.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <input type="text" name="name" value="<%= @dessert.name %>">
+  <textarea name="image_url" rows="8" cols="80"><%= @dessert.image_url %></textarea>
+  <button type="submit">Update</button>
+</form>
