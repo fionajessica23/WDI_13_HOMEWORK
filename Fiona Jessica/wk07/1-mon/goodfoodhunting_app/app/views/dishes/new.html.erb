@@ -1,0 +1,9 @@
+<form action="/dishes" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label>Dish name</label>
+  <input type="text" name="name" value="">
+
+  <label for="">Description</label>
+  <textarea name="description"></textarea>
+  <button type="submit">Post!</button>
+</form>

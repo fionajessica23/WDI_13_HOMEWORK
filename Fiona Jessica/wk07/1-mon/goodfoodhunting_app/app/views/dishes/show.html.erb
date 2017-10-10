@@ -1,0 +1,14 @@
+<h1><%= @dish.name %></h1>
+<%= @dish.description %>
+
+<div class="">
+  <a href="/dishes/<%= @dish.id %>/edit">Edit</a>
+</div>
+
+<div class="">
+  <form action="/dishes/<%= @dish.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <button type="submit">Delete</button>
+  </form>
+</div>
