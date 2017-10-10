@@ -9,6 +9,8 @@ class DishesController < ApplicationController
 
   def show
     @dish = Dish.find(params[:id])
+    @comments = @dish.comments
+    @venue = @dish.venue.name
   end
 
   def create

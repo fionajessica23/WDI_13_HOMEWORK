@@ -12,3 +12,21 @@
     <button type="submit">Delete</button>
   </form>
 </div>
+
+<%= form_tag '/comments', method: 'post' do %>
+  <input type="hidden" name="dish_id" value="<%= @dish.id %>">
+
+  <label for="">comment</label>
+  <textarea name="content"></textarea>
+  <button type="submit">post</button>
+
+<% end %>
+
+<div class=""><h4>Comments</h4></div>
+<% @comments.each do |comment| %>
+  <p><%= comment.content %></p>
+<% end %>
+
+
+<div class=""><h4>Venue</h4></div>
+<%= @venue %>

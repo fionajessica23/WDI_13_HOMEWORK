@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :venues
+  resources :comments
   # resources :dishes #this command makes the below routes for us
   get '/dishes', to: 'dishes#index'
   get '/dishes/new', to: 'dishes#new'
