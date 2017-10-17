@@ -23,6 +23,7 @@ class DishesController < ApplicationController
 
   def edit
     @dish = Dish.find(params[:id])
+    @venues = Venue.all
   end
 
   def update

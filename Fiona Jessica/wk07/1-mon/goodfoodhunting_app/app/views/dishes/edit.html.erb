@@ -6,5 +6,12 @@
 
   <label for="">Description</label>
   <textarea name="description"><%= @dish.description %></textarea>
+  <% @venues.each do |venue| %>
+    <% if venue.id == @dish.venue_id %>
+      <option value="<%= venue.id %>" selected><%= venue.name %></option>
+    <% else %>
+      <option value="<%= venue.id %>"><%= venue.name %></option>
+    <% end %>
+  <% end %>
   <button type="submit">Update</button>
 </form>

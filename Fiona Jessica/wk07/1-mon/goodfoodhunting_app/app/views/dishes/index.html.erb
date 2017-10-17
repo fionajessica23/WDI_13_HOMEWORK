@@ -1,4 +1,5 @@
 <% @dishes.each do |dish| %>
   <h2><%= dish.name %></h2>
   <p><%= dish.description %></p>
+  <p><a href="/dishes/<%= dish.id %>">View more</a></p>
 <% end %>
