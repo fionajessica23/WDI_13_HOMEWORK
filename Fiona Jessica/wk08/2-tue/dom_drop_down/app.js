@@ -9,7 +9,6 @@ var cities = [
 
 var $cityType = $('#city-type');
 
-
 function loadCities() {
   $.each(cities, function(key1, val1) {
     $.each(val1, function(key2, val2) {
@@ -17,12 +16,6 @@ function loadCities() {
       $cityType.append($cityList);
     })
   })
-
-  // alternative
-  // cities.forEach(function(city) {
-  //   var $cityList = $('<option>').text(city);
-  //   $cityType.append($cityList);
-  // })
 }
 
 $( document ).ready(function() {
