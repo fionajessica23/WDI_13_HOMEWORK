@@ -6,38 +6,39 @@
     <link rel="stylesheet" href="/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script>
-      var compliments = [
-        "Your instructors love you",
-        "High five = ^5",
-        "Shut up and take my money",
-        "It's almost beer o'clock",
-        "The Force is strong with you"
-      ];
-      var colors = ["#FFBF00", "#0080FF", "#01DF3A", "#FF0080", 'mistyrose'];
+      // var compliments = [
+      //   "Your instructors love you",
+      //   "High five = ^5",
+      //   "Shut up and take my money",
+      //   "It's almost beer o'clock",
+      //   "The Force is strong with you"
+      // ];
+      // var colors = ["#FFBF00", "#0080FF", "#01DF3A", "#FF0080", 'mistyrose'];
+      //
+      // var randCompliment = compliments[Math.floor(Math.random()*compliments.length)];
+      // var randColor = colors[Math.floor(Math.random()*colors.length)];
+      //
+      // var dispRandCompliment = function () {
+      //   $('p').append(randCompliment);
+      // };
+      //
+      // var dispRandColor = function () {
+      //   $('body').css("background-color", randColor);
+      // };
 
-      var randCompliment = compliments[Math.floor(Math.random()*compliments.length)];
-      var randColor = colors[Math.floor(Math.random()*colors.length)];
-
-      var dispRandCompliment = function () {
-        $('p').append(randCompliment);
-      };
-
-      var dispRandColor = function () {
-        $('body').css("background-color", randColor);
-      };
-
-      $(document).ready(function () {
-        dispRandCompliment();
-        dispRandColor();
-      });
+      // $(document).ready(function () {
+      //   dispRandCompliment();
+      //   dispRandColor();
+      // });
     </script>
   </head>
-  <body>
+  <body style="background-color: <%= color %>;">
     <% if (name) { %>
       <h1>Hi <%= name %></h1>
     <% } else{  %>
       <h1>Hi class....</h1>
     <% }  %>
-    <p></p>
+
+    <p><%= magicComp %></p>
   </body>
 </html>
